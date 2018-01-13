@@ -1,58 +1,86 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Aanmelden</title>
 </head>
-
 <body>
-    <header>
-        <a name="top"></a>
+    <!--        <a name="top"></a>-->
+<header>
         <nav>
-            <label>
-           <input type="checkbox">
-           <span class="menu">
-           <img src="img/logo.png" alt="logo">
-           <span class="hamburger"></span>
-            </span>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="verhalen.html">Verhalen</a></li>
-                <li><a href="afspeellijsten.html">Leeslijsten</a></li>
-                <li><a href="favorieten.html">Favorieten</a></li>
-                <li><a href="profiel.html">Mijn profiel</a></li>
+                <li><a href="index.html"><img src="img/logo.png" alt="logo"></a></li>
+                <li>
+                    <a href="leeslijsten.html">
+                        <p>Leeslijsten</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="verhalen.html">
+                        <p>Verhalen</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="favorieten.html">
+                        <p>Favorieten</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="aanmelden.html#tab1">
+                        <p>Aanmelden</p>
+                    </a>
+                </li>
+                <li><img class="zoeken" src="img/iconen/zoeken.png" alt=zoeken></li>
+ <li class="zoek"><input type="search" results="5"  placeholder="Zoeken..."> <button>Zoek</button>
             </ul>
-
-            </label>
-
         </nav>
     </header>
-    <main>
-        <section>
-            <form action="index.html">
+<article>
+<figure class="a" id="tab1">
+    <a href="#tab1">Aanmelden</a>
+
+                <form action="index.html">
                 <fieldset>
-                    <legend>Aanmelden</legend>
-                    <label for="mail">E-mail:</label>
-                    <input id="mail" type="email" placeholder="info@email.com" required>
-                    <label for="password">Wachtwoord:</label>
-                    <input type="password" name="password" id="password" placeholder="******">
+<!--                    <legend>Aanmelden</legend>-->
+                    <label for="mail"> <p>E-mail:</p> </label>
+                    <input id="mail" type="text" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" placeholder="info@email.com" required>
+                    <label for="password"><p>Wachtwoord:</p></label>
+                    <input type="text" name="password" id="password" placeholder="******">
+
                 </fieldset>
-                <button name="aanmelden" type="submit">Aanmelden</button>
-                <!--
-            <a href="registreren.html"> Registreren</a>
-            <a href="#">wachtwoord vergeten</a>
--->
-                <!--            <button name="registereren" type="submit">Wachtwoord vergeten</button>-->
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2017<a href="http://www.amyisabella.nl" target="_blank"> Amy Sprengers</a> | DFDS
+                    <input name="aanmelden" type="submit" value="aanmelden"></form>
+
+    </figure>
+<figure class="b" id="tab2">
+  <a href="#tab2">Registeren</a>
+
+  <form action="index.html">
+            <fieldset>
+                <label for="name"> <p>Voornaam:</p></label><input id="name" type="text" placeholder= "Nick" required>
+
+                <label for="surname"><p>Achternaam:</p></label><input type="text" id="surname" placeholder="Jonas" required>
+
+                <label for="mail"><p>E-mail:</p></label>
+                <input id="mail" type="text" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" placeholder="info@email.com" required>
+
+                 <label for="password"><p>Wachtwoord (Gebruik 1 hoofdletter, 1 lage letter en 1 nummer.)</p></label>
+        <input type="text"  id="password" placeholder="******" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+
+             </fieldset>
+                    <input name="aanmelden" type="submit" value="registreren"></form>
+
+    </figure>
+</article>
+
+ <footer>
+        <p>&copy; 2017 - 2018<a href="http://www.amyisabella.nl" target="_blank"> Amy Sprengers</a> | DFDS
             <p>
     </footer>
+<script type="text/javascript" src="js/script.js"></script>
+
 </body>
+<!--https://css-tricks.com/form-validation-part-1-constraint-validation-html-->
 
 </html>

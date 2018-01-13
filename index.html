@@ -1,92 +1,103 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Home</title>
 </head>
-
 <body>
+    <!--        <a name="top"></a>-->
     <header>
         <nav>
             <ul>
-                <li><img src="img/logo.png" alt="logo"></li>
-                <li><a href="leeslijsten.html">Leeslijsten</a></li>
-                <li><a href="verhalen.html">Verhalen</a></li>
-                <li><a href="favorieten.html">Favorieten</a></li>
-                <li><a href="profiel.html">Mijn profiel</a></li>
-                <li>Zoek
+                <li><a href="index.html"><img src="img/logo.png" alt="logo"></a></li>
+                <li>
+                    <a href="leeslijsten.html">
+                        <p>Leeslijsten</p>
+                    </a>
                 </li>
+                <li>
+                    <a href="verhalen.html">
+                        <p>Verhalen</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="favorieten.html">
+                        <p>Favorieten</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="aanmelden.html#tab1">
+                        <p>Aanmelden</p>
+                    </a>
+                </li>
+                <li><img class="zoeken" src="img/iconen/zoeken.png" alt=zoeken></li>
+ <li class="zoek"><input type="search" results="5"  placeholder="Zoeken..."> <button>Zoek</button>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>
-                Maak je eigen leeslijst
-            </h1>
-            <img src="img/DFDS_employee_woman_expert.png" alt="DFDS medewerker">
-        </section>
-        <section>
-            <form action="speellijsten.html">
-                <fieldset>
-                    <legend>Nieuwe leeslijst</legend>
-                    <label for="text"></label>
-                    <input type="text" name="text" id="text" placeholder="Nieuwe leeslijst">
-                </fieldset>
-                <button name="Nieuwe leeslijst" type="submit">Nieuwe leeslijst</button>
-            </form>
+    <form action="leeslijsten.html#tab2" class="voorpagina">
 
-            <button name="Random" type="random">Random leeslijst</button>
-        </section>
-    </main>
+        <fieldset>
+            <legend>Nieuwe leeslijst</legend>
+            <h1> Maak je eigen leeslijst</h1>
+            <label for="text"></label>
+            <input type="text" name="text" id="text" placeholder="Nieuwe leeslijst">
+            <input name="aanmelden" type="submit" value="Maak leeslijst">
+        </fieldset>
+
+    </form>
     <section>
+        <h1>Uitgelichte leeslijsten</h1>
+        <button> <img src="img/iconen/search.png" alt="zoeken"></button>
+        <section>
+            <picture>
+                <img src="img/Hero_Q2_2017.png" alt="mannelijke medewerkers">
+            </picture>
+
+            <main>
+               <header>
+                <h2>Populair</h2>
+</header> <p>DFDS heeft een grote selectie van populaire leeslijsten. Gekozen door gebruikers aan boord.</p>
+                <p> <a href="#"> Bekijk leeslijst </a></p>
+            </main>
+
+        </section>
+        <section>
+
+
+            <picture> <img src="img/DFDS_Gothenburg_Office.png" alt="gezin bij balie"></picture>
+      <main>
+                <header>
+                <h2>Nieuw</h2>
+</header> <p>DFDS heeft een lijst samengesteld met daarin de meest recente verhalen, zodat u altijd up-to-date bent. </p>
+               <p> <a href="#"> Bekijk leeslijst </a></p>
+            </main>
+
+        </section>
+        <section>
+            <picture><img src="img/sea-freight-shipping-dfds.png" alt="boot"></picture>
+            <main>
         <header>
-            <h1> Uitgelichte leeslijsten</h1>
-        </header>
+                <h2>Explore</h2>
+                </header> <p>DFDS heeft een lijst samengesteld om in stemming te komen voor u reis.</p>
+              <p>  <a href="#"> Bekijk leeslijst </a></p>
+            </main>
+
+
+        </section>
     </section>
-    <article>
-        <header>
-            <h2>Populair</h2>
-        </header>
+    <!--
+    <div>
+        <a href="#top">^</a>
+    </div>
+-->
 
-        <picture>
-            <img src="img/Hero_Q2_2017.png" alt="mannelijke medewerkers">
-        </picture>
-        <p>Reisverhalen</p>
-
-        <!--
-<section>
-    <picture><img src="img/passenger-service-dfds-ferries-backup.png" alt="verliefd koppel"></picture>
-    <p>Romantiek</p>
-
-                </section>-->
-    </article>
-    <article>
-        <header>
-            <h2>Nieuw</h2>
-        </header>
-
-        <picture> <img src="img/DFDS_Gothenburg_Office.png" alt="gezin bij balie"></picture>
-        <p>Boos</p>
-
-    </article>
-    <article>
-        <header>
-            <h2>Explore</h2>
-        </header>
-
-        <picture><img src="img/sea-freight-shipping-dfds.png" alt="boot"></picture>
-        <p>Reislust</p>
-
-    </article>
-    <footer>
-        <p>&copy; 2017<a href="http://www.amyisabella.nl" target="_blank"> Amy Sprengers</a> | DFDS
+<footer>
+        <p>&copy; 2017 - 2018<a href="http://www.amyisabella.nl" target="_blank"> Amy Sprengers</a> | DFDS
             <p>
     </footer>
-
+<script type="text/javascript" src="js/script.js"></script>
 </body>
-
 </html>

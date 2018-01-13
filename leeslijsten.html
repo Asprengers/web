@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,67 +8,137 @@
 </head>
 
 <body>
-    <header>
-        <a name="top"></a>
+    <!--        <a name="top"></a>-->
+  <header>
         <nav>
-            <label>
-           <input type="checkbox">
-           <span class="menu">
-           <img src="img/logo.png" alt="logo">
-           <span class="hamburger"></span>
-            </span>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="verhalen.html">Verhalen</a></li>
-                <li><a href="afspeellijsten.html">Leeslijsten</a></li>
-                <li><a href="favorieten.html">Favorieten</a></li>
-                <li><a href="profiel.html">Mijn profiel</a></li>
+                <li><a href="index.html"><img src="img/logo.png" alt="logo"></a></li>
+                <li>
+                    <a href="leeslijsten.html">
+                        <p>Leeslijsten</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="verhalen.html">
+                        <p>Verhalen</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="favorieten.html">
+                        <p>Favorieten</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="aanmelden.html#tab1">
+                        <p>Aanmelden</p>
+                    </a>
+                </li>
+                <li><img class="zoeken" src="img/iconen/zoeken.png" alt=zoeken></li>
+ <li class="zoek"><input type="search" results="5"  placeholder="Zoeken..."> <button>Zoek</button>
             </ul>
-
-            </label>
-
         </nav>
     </header>
-    <aside>
-        <header>
-            <h1>Leeslijsten</h1>
-        </header>
-        <article>
-            <header>
+
+
+<section class="tab">
+  <input type="radio" checked name="tab" id="tab1">
+  <label for="tab1">Leeslijsten</label>
+  <input type="radio" name="tab" id="tab2">
+  <label for="tab2">Mijn leeslijsten</label>
+  <div class="tab">
+
+      <section>
+        <h1>Leeslijsten</h1>
+        <button> <img src="img/iconen/search.png" alt="zoeken"></button>
+        <section>
+            <picture>
+                <img src="img/Hero_Q2_2017.png" alt="mannelijke medewerkers">
+            </picture>
+
+            <aside>
+               <header>
                 <h2>Populair</h2>
-            </header>
-            <img src="img/Hero_Q2_2017.jpg">
-            <p>Op reis</p>
-        </article>
+</header> <p>DFDS heeft een grote selectie van populaire leeslijsten. Gekozen door gebruikers aan boord.</p>
+                <p> <a href="#"> Bekijk leeslijst </a></p>
+            </aside>
 
-        <article>
-            <img src="img/passenger-service-dfds-ferries-backup.jpg">
-            <p>Romantiek</p>
-        </article>
+        </section>
+        <section>
 
-        <article>
-            <header>
+
+            <picture> <img src="img/DFDS_Gothenburg_Office.png" alt="gezin bij balie"></picture>
+      <aside>
+                <header>
                 <h2>Nieuw</h2>
-            </header>
+</header> <p>DFDS heeft een lijst samengesteld met daarin de meest recente verhalen, zodat u altijd up-to-date bent. </p>
+               <p> <a href="#"> Bekijk leeslijst </a></p>
+            </aside>
 
-            <body> <img src="img/DFDS_Gothenburg_Office.jpg">
-            </body>
-            <p>Boos</p>
-        </article>
+        </section>
+        <section>
+            <picture><img src="img/sea-freight-shipping-dfds.png" alt="boot"></picture>
+            <aside>
+<header>
+                <h2>Explore</h2>
+                </header> <p>DFDS heeft een lijst samengesteld om in stemming te komen voor u reis.</p>
+              <p>  <a href="#"> Bekijk leeslijst </a></p>
+            </aside>
 
-        <article>
-            <h2>Explore</h2>
 
-            <body> <img src="img/sea-freight-shipping-dfds.jpg">
-            </body>
-            <p>Reislust</p>
-        </article>
+        </section>
+    </section>
 
-    </aside>
-    <footer>
-        <p>&copy; 2017 Amy Sprengers | DFDS
+  </div>
+  <div class="tab">  <section>
+        <h1>Mijn leeslijsten</h1>
+        <button> <img src="img/iconen/search.png" alt="zoeken"></button>
+
+        <section>
+            <picture>
+                <img src="img/Hero_Q2_2017.png" alt="mannelijke medewerkers">
+            </picture>
+
+            <aside>
+               <header>
+                <h2>Populair</h2>
+</header> <p>DFDS heeft een grote selectie van populaire leeslijsten. Gekozen door gebruikers aan boord.</p>
+                <p> <a href="#"> Bekijk leeslijst </a></p>
+            </aside>
+
+        </section>
+        <section>
+
+
+            <picture> <img src="img/DFDS_Gothenburg_Office.png" alt="gezin bij balie"></picture>
+      <aside>
+                <header>
+                <h2>Nieuw</h2>
+</header> <p>DFDS heeft een lijst samengesteld met daarin de meest recente verhalen, zodat u altijd up-to-date bent. </p>
+               <p> <a href="#"> Bekijk leeslijst </a></p>
+            </aside>
+
+        </section>
+        <section>
+            <picture><img src="img/sea-freight-shipping-dfds.png" alt="boot"></picture>
+            <aside>
+<header>
+                <h2>Explore</h2>
+                </header> <p>DFDS heeft een lijst samengesteld om in stemming te komen voor u reis.</p>
+              <p>  <a href="#"> Bekijk leeslijst </a></p>
+            </aside>
+
+
+        </section>
+    </section></div>
+</section>
+
+
+     <footer>
+        <p>&copy; 2017 - 2018<a href="http://www.amyisabella.nl" target="_blank"> Amy Sprengers</a> | DFDS
             <p>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 
 </html>
