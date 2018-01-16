@@ -787,7 +787,7 @@ input:checked + .popuplabel {
 /*https://codepen.io/imprakash/pen/GgNMXO*/
 
 .download:before {
-    content: url(/img/iconen/download1.png);
+    content: url(../img/iconen/download1.png);
     display: block;
     width: fit-content;
     overflow: hidden;
@@ -795,11 +795,11 @@ input:checked + .popuplabel {
 }
 
 .download:checked:before {
-    content: url(/img/iconen/download2.png);
+    content: url(../img/iconen/download2.png);
 }
 
 .tijd {
-    content: url(/img/iconen/2uur.png)
+    content: url(../img/iconen/2uur.png)
 }
 
 aside {
