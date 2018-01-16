@@ -24,11 +24,13 @@ body {
     font-weight: 400;
     line-height: 1.5;
 }
+
 body > * {
     padding: 1em;
     margin: .5em;
 
 }
+
 body {
     transition: .5s ease-in;
     display: flex;
@@ -43,12 +45,14 @@ body {
     src: url(../Fonts/DFDS-Bold_web.woff2) format("woff2"), url(../Fonts/DFDS-Bold_web.woff) format("woff"), url(../Fonts/DFDS-Bold_web.ttf) format("truetype"), url(../Fonts/DFDS-Bold_web.svg#DFDS-Bold_web) format("svg");
     font-style: normal
 }
+
 @font-face {
     font-family: DFDS-light;
     src: url(../Fonts/DFDS-Light_web.woff2) format("woff2"), url(../Fonts/DFDS-Light_web.woff) format("woff"), url(../Fonts/DFDS-Light_web.ttf) format("truetype"), url(../Fonts/DFDS-Light_web.svg#DFDS-Light_web) format("svg");
     font-weight: 300;
     font-style: normal
 }
+
 @font-face {
     font-family: icomoon;
     src: url(../Fonts/Icons/icomoon.eot?gvto4);
@@ -71,29 +75,36 @@ h6 {
     line-height: 1.4;
     padding: 0;
 }
+
 h1 {
     font-size: 1.7em;
     margin-bottom: 0.234em;
 }
+
 h2 {
     font-size: 1.3em;
 }
+
 h3 {
     font-size: 1.17em;
 }
+
 h4 {
     font-size: 1.1em;
     margin-bottom: 0.234em;
 }
+
 p {
     font-size: 1em
 }
+
 a {
     text-decoration: none;
     color: #002b45;
     line-height: inherit;
     transition: color 0.3s ease;
 }
+
 a:hover {
     color: grey;
 }
@@ -110,6 +121,7 @@ nav {
     z-index: 100;
     box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.250em 0 rgba(0, 0, 0, 0.19);
 }
+
 ul {
     list-style: none;
     display: flex;
@@ -117,6 +129,7 @@ ul {
     padding-left: 0;
     margin: 0;
 }
+
 li {
     color: #333;
     padding: .25em .5em;
@@ -126,15 +139,18 @@ li {
     font-size: 1em;
     /*    margin: 0;*/
 }
+
 li > img {
     width: 1.875em;
     height: 1.875em;
     margin: 0;
 }
+
 li > a > img {
     width: 6.250em;
     margin: 0;
 }
+
 li > a > p {
     display: flex;
     width: 1.875em;
@@ -144,10 +160,12 @@ li > a > p {
     margin: 0;
     text-indent: -9999em;
 }
+
 li:nth-of-type(4) {
     margin-right: auto;
 
 }
+
 li:nth-of-type(2) > a > p {
     display: flex;
     width: 1.875em;
@@ -157,6 +175,7 @@ li:nth-of-type(2) > a > p {
     margin: 0;
     text-indent: -9999em;
 }
+
 li:nth-of-type(3) > a > p {
     display: flex;
     width: 1.875em;
@@ -166,6 +185,7 @@ li:nth-of-type(3) > a > p {
     margin: 0;
     text-indent: -9999em;
 }
+
 li:nth-of-type(4) > a > p {
     display: flex;
     width: 1.875em;
@@ -175,6 +195,7 @@ li:nth-of-type(4) > a > p {
     margin: 0;
     text-indent: -9999em;
 }
+
 li:nth-of-type(5) > a > p {
     display: flex;
     width: 1.875em;
@@ -193,10 +214,12 @@ footer {
     padding: 0;
     margin: 0;
 }
+
 footer p {
     color: white;
     align-content: center;
 }
+
 footer a {
     color: white;
 }
@@ -218,12 +241,14 @@ div a {
 /*formulier aanmelden/registreren */
 
 article {
-    margin-top: 20px;
-    height: 560px;
+    margin-top: 1.250em;
+    height: 35.000em;
     width: 100%;
     /*        height: 100%;*/
     position: relative;
+    top: 0.625em;
 }
+
 article figure a {
     /*height: 100%;*/
     position: absolute;
@@ -233,14 +258,17 @@ article figure a {
     line-height: 2.500em;
     border-right: 0.063em solid grey;
 }
+
 #tab1 a {
     width: 10.625em;
     left: 0.625em;
 }
+
 #tab2 a {
     width: 10.000em;
     left: 11.250em;
 }
+
 article figure form {
     display: none;
     clear: both;
@@ -252,65 +280,78 @@ article figure form {
     margin-top: 2.500em;
     /*    box-sizing: border-box;*/
 }
+
 article figure:target a {
     background: #ff9b36;
     color: #fff;
 }
+
 article figure:target form {
     display: block;
 }
+
 article figure:first-of-type > figure {
     padding-top: 3.125em;
     text-align: center;
     z-index: -1;
 }
+
 article figure:nth-child(1) a {
     left: 0;
 }
+
 article figure:nth-child(2) a {
     left: 12.500em;
 }
+
 input[type=text] {
     width: 100%;
-    padding: 12px;
-    border-radius: 4px;
+    padding: 0.750em;
+    border-radius: 0.750em;
 }
 
 /*https://codepen.io/Ninjaweb/pen/pvrowL?q=tabs+without+javascript&limit=all&type=type-pens*/
 
 /*uitgelicht*/
+
 section > section {
     background: white;
     flex: 0 0 100%;
 }
+
 section > section > img {
     margin-bottom: -10PX;
 }
+
 section > section > header {
     background: white;
 }
+
 section > section > main {
     background: white;
     position: static;
     box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.250em 0 rgba(0, 0, 0, 0.19);
     height: 12em;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
+
 section > section > main > header > h2 {
-    margin-left: 20px;
-    padding-top: 10px;
+    margin-left: 1.250em;
+    padding-top: 0.625em;
 }
+
 section > section > main > p {
-    margin-left: 20px;
+    margin-left: 1.250em;
 
 }
+
 section > section > main > p > a {
     font-family: DFDS-bold, "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
     font-size: .88889rem;
     text-transform: uppercase;
     display: inline-block;
-    letter-spacing: .4px;
+    letter-spacing: .0.750em;
     border: 0;
     color: #1b5786;
 }
@@ -320,11 +361,17 @@ section > section > main > p > a {
 img {
     width: 100%;
 }
+
+p > img {
+    width: 2.500em;
+}
+
 picture {
     position: relative;
     overflow: hidden;
     display: block;
 }
+
 picture::before {
     border-style: solid;
     content: "";
@@ -338,6 +385,7 @@ picture::before {
     -moz-opacity: .7;
     opacity: .7;
 }
+
 section img {
     margin-bottom: -10PX;
 }
@@ -356,12 +404,18 @@ button {
     background: #ff9b36;
     align-content: center;
     border: none;
-    margin-top: 30px;
+    margin-top: 1.875em;
 }
+
 button > img {
     width: 3em;
 
 }
+
+button > a {
+    color: white;
+}
+
 input[type=submit] {
     width: 100%;
     font-size: .88889em;
@@ -374,6 +428,7 @@ input[type=submit] {
     background: #ff9b36;
     align-content: center;
 }
+
 input::selection {
     background: #ff9b36;
     color: white;
@@ -385,27 +440,28 @@ input::selection {
     background-image: url(../img/verhalen/recept/Mobile@3x.png);
     display: inline-block;
     background-size: contain;
-    height: 1072px;
+    height: 67.000em;
     background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
 
+    padding: 0
 }
+
 #hongerwinter {
     background-image: url(../img/verhalen/hongerwinter/Mobile@3x.png);
     display: inline-block;
     background-size: contain;
-    height: 1072px;
+    height: 67.000em;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
 
 }
+
 #gefrustreerd {
     background-image: url(../img/verhalen/gefrustreerd/Mobile@3x.png);
     display: inline-block;
     background-size: contain;
-    height: 3472px;
+    height: 217.000em;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
@@ -413,29 +469,35 @@ input::selection {
 }
 
 /*leeslijst tabs*/
-section.tab{
-    margin-top: 20px;
+
+section.tab {
+    margin-top: 1.250em;
 }
+
 section.tab input {
     display: none;
     grid-column-start: 1;
     grid-column-end: 1;
 }
+
 section.tab label {
-    padding: 14px;
-    margin-top: 30px;
-    border: solid #ff9b36 1px;
-    box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2) ;
+    padding: 0.875em;
+    margin-top: 1.875em;
+    border: solid #ff9b36 0.063em;
+    box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2);
 }
+
 section.tab input:checked + label {
     background: #ff9b36;
     color: #fff;
 }
+
 section.tab div.tab {
     display: none;
     grid-column-start: 1;
     grid-column-end: 4;
 }
+
 section.tab input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
 section.tab input:nth-of-type(2):checked ~ .tab:nth-of-type(2) {
     display: block;
@@ -460,7 +522,7 @@ header .zoek {
     padding: 0;
     opacity: 0;
     display: flex;
-    margin-top: 50px;
+    margin-top: 3.125em;
     position: fixed;
     width: 100%;
     background: white;
@@ -477,11 +539,11 @@ header .zoek > button {
 }
 
 input[type=search] {
-    /*    margin-top: 30px;*/
+    /*    margin-top: 1.875em;*/
     width: 90%;
     font-size: 1em;
-    padding: 10px;
-    border: black solid 1px;
+    padding: 0.625em;
+    border: black solid 0.063em;
 }
 
 /*    https://codepen.io/SkipHendriks/pen/wKJQzg?depth=everything&order=popularity&page=16&q=search+menu&show_forks=false*/
@@ -491,9 +553,9 @@ input[type=search] {
 .voorpagina > fieldset {
     /*        width: 50%;*/
     border: 0;
-    /*        border-radius: 5px;*/
+    /*        border-radius: 0.313em;*/
     background-color: white;
-    padding: 20px;
+    padding: 1.250em;
     box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.250em 0 rgba(0, 0, 0, 0.19);
     /*        margin-bottom: 10%;*/
     overflow: hidden;
@@ -512,7 +574,248 @@ section > button {
     display: inline-block;
     /*   margin-right: 0;*/
     width: 37%;
-    margin-bottom: 20px;
+    margin-bottom: 1.250em;
+}
+
+/*breadcrumb*/
+
+ul.breadcrumb {
+    margin-top: 1.875em;
+    /*    margin-bottom: 0.625em;*/
+    padding: 0.500em 1em;
+    /*    list-style: none;*/
+    /*    background-color: #eee;*/
+    margin-bottom: 1.875em;
+
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li + li:before {
+    padding: 0.500em;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #ff9b36;
+}
+
+#list {
+    perspective: 6.250em;
+}
+
+li.show {
+    height: 2em;
+    margin: 0.125em 0;
+    opacity: 1;
+    transform: none;
+    transition: all 0.5s cubic-bezier(.36, -0.64, .34, 1.76);
+}
+
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_breadcrumbs*/
+
+/*reactie*/
+
+.post {
+    display: block;
+    border: 0.063em solid;
+    height: 25.000em;
+    margin-top: -0em;
+    /*   margin-left:  6.250em;*/
+    /*    margin-right: 6.250em;*/
+}
+
+/*pop-up en lijst*/
+
+.container {
+    /*  max-width: 28.125em;*/
+    /*  margin: 0 auto;*/
+    /*  border-top: 0.313em solid #435757;*/
+    /*  background-color: rgba(255, 255, 255, .2);*/
+    /*  box-shadow: 0 0 1.250em rgba(0, 0, 0, .1);*/
+    user-select: none;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    /*  padding: 1.250em;*/
+    counter-reset: done-items undone-items;
+}
+
+.done {
+    order: 1;
+}
+
+.done::after {
+    content: ' (' counter(done-items) ')';
+}
+
+.undone {
+    order: 3;
+}
+
+
+/* hide inputs offscreen, but at the same vertical positions as the correpsonding labels, so that tabbing scrolls the viewport as expected */
+
+input {
+    /*  display: block;*/
+    height: 3.313em;
+    /*  order: 4;*/
+    outline: none;
+    counter-increment: undone-items;
+}
+
+input:checked {
+    order: 2;
+    counter-increment: done-items;
+}
+
+.popuplabel {
+    display: block;
+    position: relative;
+    padding: 0.938em 0 0.938em 2.813em;
+    border-top: 0.063em dashed #fff;
+    order: 4;
+    cursor: pointer;
+    animation: undone .5s;
+}
+
+.popuplabel::before {
+    content: '\f10c';
+    circle outline display: block;
+    position: absolute;
+    top: 0.688em;
+    left: 0.625em;
+    font: 1.5em 'FontAwesome';
+}
+
+input:checked + .popuplabel {
+    order: 2;
+    animation: done .5s;
+}
+
+.popuplabel:checked + .popuplabel::before {
+    /*  content: '\f058';  circle checkmark */
+}
+
+@keyframes done {
+    0% {
+        opacity: 0;
+        background-color: rgba(255, 255, 255, .4);
+        transform: translateY(1.250em);
+    }
+    50% {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, .4);
+    }
+}
+
+@keyframes undone {
+    0% {
+        opacity: 0;
+        background-color: rgba(255, 255, 255, .4);
+        transform: translateY(1.250em);
+    }
+    50% {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, .4);
+    }
+}
+
+/*https://codepen.io/lonekorean/pen/xGLLwX?depth=everything&order=popularity&page=4&q=+list&show_forks=false*/
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 4.375em auto;
+    padding: 1.250em;
+    background: #fff;
+    border-radius: 0.313em;
+    /*  width: 30%;*/
+    width: 100%;
+    /*    height: 25.000em;*/
+    position: relative;
+    /*  transition: all 5s ease-in-out;*/
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    /*  font-family: Tahoma, Arial, sans-serif;*/
+}
+
+.popup .close {
+    position: absolute;
+    top: 1.250em;
+    right: 1.875em;
+    transition: all 200ms;
+    font-size: 1.875em;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.popup .close:hover {
+    /*  color: #06D85F;*/
+}
+
+.popup .content {
+    max-height: 100%;
+    overflow: auto;
+}
+
+/*https://codepen.io/imprakash/pen/GgNMXO*/
+
+.download:before {
+    content: url(/img/iconen/download1.png);
+    display: block;
+    width: fit-content;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.download:checked:before {
+    content: url(/img/iconen/download2.png);
+}
+
+.tijd {
+    content: url(/img/iconen/2uur.png)
+}
+
+aside {
+    display: block;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 1;
+    width: 100%;
+}
+
+aside > label {
+    display: block;
+}
+
+aside > label > select {
+    border: 0.125em solid #ff9b36;
 }
 
 /* Tablet (medium) screens */
@@ -531,9 +834,9 @@ section > button {
     .voorpagina > fieldset {
         width: 50%;
         border: 0;
-        border-radius: 5px;
+        border-radius: 0.313em;
         background-color: white;
-        padding: 20px;
+        padding: 1.250em;
         box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.250em 0 rgba(0, 0, 0, 0.19);
         margin-bottom: 10%;
 
@@ -584,30 +887,41 @@ section > button {
         box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.250em 0 rgba(0, 0, 0, 0.19);
         height: 20em;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0.625em;
     }
     #recept {
         background-repeat: no-repeat;
         background-image: url(../img/verhalen/recept/Tablet@3x.png);
         margin: 0;
         background-size: contain;
-        /*        height: 600px;*/
     }
     #hongerwinter {
         background-repeat: no-repeat;
         background-image: url(../img/verhalen/hongerwinter/Tablet@3x.png);
         margin: 0;
         background-size: contain;
-        /*        height: 600px;*/
     }
     #gefrustreerd {
         background-repeat: no-repeat;
         background-image: url(../img/verhalen/gefrustreerd/Tablet@3x.png);
         margin: 0;
         background-size: contain;
-        height: 600px;
+        height: 37.500em;
 
     }
+    aside {
+        background-image: url(/img/iconen/filter.png);
+        display: block;
+
+    }
+    aside > label {
+        display: block;
+    }
+    aside > label > select {
+        border: 0.125em solid #ff9b36;
+    }
+
+
 }
 
 /* Desktop (big) screens */
@@ -625,9 +939,9 @@ section > button {
     .voorpagina > fieldset {
         width: 50%;
         border: 0;
-        border-radius: 5px;
+        border-radius: 0.313em;
         background-color: white;
-        padding: 20px;
+        padding: 1.250em;
         box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.250em 0 rgba(0, 0, 0, 0.19);
         margin-bottom: 10%;
         overflow: hidden;
@@ -636,12 +950,12 @@ section > button {
         visibility: hidden;
     }
     article {
-        margin-top: 20px;
+        top: 1.250em;
+        margin-top: 1.250em;
         margin-left: 15%;
         margin-right: 15%;
-        height: 580px;
+        height: 36.250em;
         width: 75%;
-        /*        height: 100%;*/
         position: relative;
     }
     section > h1 {
@@ -673,8 +987,9 @@ section > button {
         box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.250em 0 rgba(0, 0, 0, 0.19);
         height: 15em;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0.625em;
     }
+
     button {
         width: 50%;
         margin-left: 50%;
@@ -698,22 +1013,22 @@ section > button {
         background-image: url(../img/verhalen/recept/Desktop%20HD@3x.png);
         margin: 0;
         background-size: contain;
-        /*        height: 600px;*/
     }
     #hongerwinter {
         background-repeat: no-repeat;
         background-image: url(../img/verhalen/hongerwinter/Desktop%20HD@3x.png);
         margin: 0;
         background-size: contain;
-        /*        height: 600px;*/
     }
     #gefrustreerd {
         background-repeat: no-repeat;
         background-image: url(../img/verhalen/gefrustreerd/Desktop%20HD@3x.png);
         margin: 0;
         background-size: contain;
-        height: 1300px;
-
+        height: 81.250em;
     }
+
+
+
 
 }

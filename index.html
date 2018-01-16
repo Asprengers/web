@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Home</title>
 </head>
+
 <body>
-    <!--        <a name="top"></a>-->
+
     <header>
         <nav>
             <ul>
@@ -33,18 +35,68 @@
                     </a>
                 </li>
                 <li><img class="zoeken" src="img/iconen/zoeken.png" alt=zoeken></li>
- <li class="zoek"><input type="search" results="5"  placeholder="Zoeken..."> <button>Zoek</button>
+                <li class="zoek"><input type="search" results="5" placeholder="Zoeken..."> <button>Zoek</button>
             </ul>
         </nav>
     </header>
     <form action="leeslijsten.html#tab2" class="voorpagina">
-
         <fieldset>
             <legend>Nieuwe leeslijst</legend>
             <h1> Maak je eigen leeslijst</h1>
             <label for="text"></label>
             <input type="text" name="text" id="text" placeholder="Nieuwe leeslijst">
-            <input name="aanmelden" type="submit" value="Maak leeslijst">
+
+            <button class="box">
+    <a class="button" href="#popup1">Aanmaken</a>
+    </button>
+
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>*naam leeslijst*</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <article class="container">
+                            <button class="buttonnieuw"><a href="leeslijsten.html">Opslaan</a></button>
+                            <article class="items">
+                                <input id="item1" type="checkbox">
+                                <label class="popuplabel" for="item1">
+            <header>
+                <h3> Gefrustreerd </h3>
+            </header>
+            <img src="img/verhalen/gefrustreerd/Desktop%20HD@3x.png">
+            <p>Ik stap uit die godverdomde stinkbus. De mensen krioelen als mieren over het stationsplein. Ik wil ze vertrappen onder m’n schoenen. Vermorzelen. Verbrijzelen. De klootzakken en kakkerlakken. Met hun nietszeggende leventjes en hun waardeloze gedachten. Ik duw een wagentje met mijn […]</p>
+     </label>
+
+                                <input id="item2" type="checkbox">
+                                <label class="popuplabel" for="item2"><header>
+                <h3>Recept</h3>
+            </header>
+
+        <img src="img/verhalen/recept/Desktop%20HD@3x.png">
+
+            <p>Dit gerecht is vrij eenvoudig te maken. Ideaal op een doordeweekse dag als je even niet weet wat je met het leven aan moet. Als je wel weet wat je met het leven aan moet, is dit gerecht ook heel lekker. Drinksuggestie: een krat bier. Ingrediënten: Hoofdingrediënten: 1 Max Molovich […]</p></label>
+
+                                <input id="item3" type="checkbox">
+                                <label class="popuplabel" for="item3"> <header>
+                <h3>Hongerwinter</h3>
+            </header>
+
+            <img src="img/verhalen/hongerwinter/Desktop%20HD@3x.png">
+
+            <p>Mijn voeten en handen heb ik ingezwachteld tegen de kou. Kranten tegen m’n borst. Ik duw een handkar voort waarin mijn zoon vredig ligt te slapen. Centraal Station. De tramrails liggen er kaal bij. Het hout tussen de rails is al lang weggenomen. Ik word geacht het IJ over te steken om in de dorpen [...]</p></label>
+
+
+                                <h2 class="done" aria-hidden="true">Toegevoegd</h2>
+                                <h2 class="undone" aria-hidden="true">Nog niet toegevoegd</h2>
+
+                            </article>
+
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+
         </fieldset>
 
     </form>
@@ -57,10 +109,11 @@
             </picture>
 
             <main>
-               <header>
-                <h2>Populair</h2>
-</header> <p>DFDS heeft een grote selectie van populaire leeslijsten. Gekozen door gebruikers aan boord.</p>
-                <p> <a href="#"> Bekijk leeslijst </a></p>
+                <header>
+                    <h2>Populair</h2>
+                </header>
+                <p>DFDS heeft een grote selectie van populaire leeslijsten. Gekozen door gebruikers aan boord.</p>
+                <p> <a href="populair.html"> Bekijk leeslijst </a></p>
             </main>
 
         </section>
@@ -68,36 +121,35 @@
 
 
             <picture> <img src="img/DFDS_Gothenburg_Office.png" alt="gezin bij balie"></picture>
-      <main>
+            <main>
                 <header>
-                <h2>Nieuw</h2>
-</header> <p>DFDS heeft een lijst samengesteld met daarin de meest recente verhalen, zodat u altijd up-to-date bent. </p>
-               <p> <a href="#"> Bekijk leeslijst </a></p>
+                    <h2>Nieuw</h2>
+                </header>
+                <p>DFDS heeft een lijst samengesteld met daarin de meest recente verhalen, zodat u altijd up-to-date bent. </p>
+                <p> <a href="#"> Bekijk leeslijst </a></p>
             </main>
 
         </section>
         <section>
             <picture><img src="img/sea-freight-shipping-dfds.png" alt="boot"></picture>
             <main>
-        <header>
-                <h2>Explore</h2>
-                </header> <p>DFDS heeft een lijst samengesteld om in stemming te komen voor u reis.</p>
-              <p>  <a href="#"> Bekijk leeslijst </a></p>
+                <header>
+                    <h2>Explore</h2>
+                </header>
+                <p>DFDS heeft een lijst samengesteld om in stemming te komen voor u reis.</p>
+                <p> <a href="#"> Bekijk leeslijst </a></p>
             </main>
 
 
         </section>
     </section>
-    <!--
-    <div>
-        <a href="#top">^</a>
-    </div>
--->
 
-<footer>
+
+    <footer>
         <p>&copy; 2017 - 2018<a href="http://www.amyisabella.nl" target="_blank"> Amy Sprengers</a> | DFDS
             <p>
     </footer>
-<script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
