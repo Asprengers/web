@@ -159,6 +159,7 @@ li > a > p {
     background-size: 100%;
     margin: 0;
     text-indent: -9999em;
+    line-height: 2em;
 }
 
 li:nth-of-type(4) {
@@ -204,6 +205,8 @@ li:nth-of-type(5) > a > p {
     background-size: 100%;
     margin: 0;
     text-indent: -9999em;
+    line-height: 2em;
+
 }
 
 /*footer*/
@@ -317,36 +320,25 @@ input[type=text] {
 section > section {
     background: white;
     flex: 0 0 100%;
-}
-
-section > section > img {
-    margin-bottom: -10PX;
-}
-
-section > section > header {
-    background: white;
-}
-
-section > section > main {
-    background: white;
-    position: static;
     box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.250em 0 rgba(0, 0, 0, 0.19);
-    height: 12em;
-    margin-top: 0;
-    margin-bottom: 0.625em;
+    position: static;
+    /*    height: 12em;*/
+    /*    margin-top: 0;*/
+    /*        margin-bottom: 0.625em;*/
 }
 
-section > section > main > header > h2 {
-    margin-left: 1.250em;
+
+section > section > h2 {
+    margin-left: 1em;
     padding-top: 0.625em;
 }
 
-section > section > main > p {
-    margin-left: 1.250em;
+section > section > p {
+    margin: 1.250em;
 
 }
 
-section > section > main > p > a {
+section > section > p > a {
     font-family: DFDS-bold, "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
     font-size: .88889rem;
     text-transform: uppercase;
@@ -354,7 +346,9 @@ section > section > main > p > a {
     letter-spacing: .0.750em;
     border: 0;
     color: #1b5786;
+    margin-bottom: 2em;
 }
+
 
 /*afbeeldingen en overlay*/
 
@@ -732,7 +726,7 @@ input:checked + .popuplabel {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
+
     right: 0;
     background: rgba(0, 0, 0, 0.7);
     transition: opacity 500ms;
@@ -744,18 +738,24 @@ input:checked + .popuplabel {
 .overlay:target {
     visibility: visible;
     opacity: 1;
+    height: fit-content;
+    z-index: 3;
 }
 
 .popup {
-    margin: 4.375em auto;
-    padding: 1.250em;
+    /*    margin: 4.375em auto;*/
+    /*    padding: 1.250em;*/
     background: #fff;
     border-radius: 0.313em;
     /*  width: 30%;*/
-    width: 100%;
+    /*    width: 100%;*/
     /*    height: 25.000em;*/
     position: relative;
     /*  transition: all 5s ease-in-out;*/
+    margin-top: 4.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 4.5em;
 }
 
 .popup h2 {
@@ -780,7 +780,7 @@ input:checked + .popuplabel {
 }
 
 .popup .content {
-    max-height: 100%;
+    height: 57em;
     overflow: auto;
 }
 
@@ -818,14 +818,16 @@ aside > label > select {
     border: 0.125em solid #ff9b36;
 }
 
+
 /* Tablet (medium) screens */
 
 @media screen and (min-width: 30em) {
     .voorpagina {
-        background-image: url(../img/DFDS_employee_woman_expert.png);
-        background-repeat: no-repeat;
+        background: url(../img/lezenheader.png);
+        /*        Copyright : warrengoldswain*/
+        background-position: center;
         background-size: cover;
-        background: block;
+
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 2%;
@@ -928,9 +930,6 @@ aside > label > select {
 
 @media screen and (min-width: 48em) {
     .voorpagina {
-        background-image: url(../img/DFDS_employee_woman_expert.png);
-        background-repeat: no-repeat;
-        background-size: cover;
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 2%;
@@ -989,7 +988,6 @@ aside > label > select {
         margin-top: 0;
         margin-bottom: 0.625em;
     }
-
     button {
         width: 50%;
         margin-left: 50%;
