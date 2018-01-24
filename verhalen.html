@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,15 +9,21 @@
 </head>
 
 <body>
-    <!--        <a name="top"></a>-->
- <header>
+
+    <header>
         <nav>
             <ul>
-                <li><a href="index.html"><img src="img/logo.png" alt="logo"></a></li>
+                <li>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </li>
                 <li>
                     <a href="leeslijsten.html">
-                        <p>Leeslijsten</p><span id="clicks"></span>
+                        <p>Leeslijsten</p>
+                        <span id="clicks"></span>
                     </a>
+
                 </li>
                 <li>
                     <a href="verhalen.html">
@@ -33,98 +40,102 @@
                         <p>Aanmelden</p>
                     </a>
                 </li>
-                <li><img class="zoeken" src="img/iconen/zoeken.png" alt=zoeken></li>
- <li class="zoek"><input type="search" results="5"  placeholder="Zoeken..."> <button>Zoek</button>
+                <li>
+                    <img class="zoeken" src="img/iconen/zoeken.png" alt=zoeken>
+                </li>
+
+                <li class="zoek">
+                    <input type="search" placeholder="Zoeken...">
+                    <button>Zoek</button>
+                </li>
             </ul>
         </nav>
     </header>
 
 
-
     <section>
         <h1>Verhalen</h1>
-<aside>
-        <h1>Filter en sorteer</h1>
-        <label>
-                Vakantiebestemming
-                <select>
+
+        <aside>
+            <h2>Filter en sorteer</h2>
+
+            <label>
+                        Vakantiebestemming
+                        <select>
                         <option value="0">Alles</option>
                         <option value="1">Zomer</option>
                         <option value="2">Winter</option>
                         <option value="3">Herfst</option>
                         <option value="4">Lente</option>
-                </select>
-        </label>
+                        </select>
+            </label>
 
- <label>
-                Stemming
-                                       <select>
+            <label>
+                        Stemming
+                        <select>
                         <option value="0">Alles</option>
                         <option value="1">Boos</option>
                         <option value="2">Blij</option>
                         <option value="3">Vrolijk</option>
                         <option value="4">Verdrietig</option>
-                </select>
-        </label>
-        <label >
+                        </select>
+            </label>
+
+            <label>
                 Sorteer op:
                 <select name="sort" id="sort">
                         <option value="naam">Naam</option>
                         <option value="leestijd">Leestijd</option>
                         <option value="populariteit">Populariteit</option>
                 </select>
-        </label>
+            </label>
+        </aside>
 
-</aside>
         <section>
-            <header>
-                <h3>Recept</h3>
-            </header>
-
-        <img src="img/verhalen/recept/Desktop%20HD@3x.png">
-
-            <p>Dit gerecht is vrij eenvoudig te maken. Ideaal op een doordeweekse dag als je even niet weet wat je met het leven aan moet. Als je wel weet wat je met het leven aan moet, is dit gerecht ook heel lekker. Drinksuggestie: een krat bier. Ingrediënten: Hoofdingrediënten: 1 Max Molovich […]</p>
-
             <input type="checkbox" class="download" />
-  <input type="checkbox" class="tijd" />
+            <input type="checkbox" class="tijd" />
+            <img src="img/verhalen/recept/Desktop%20HD@3x.png" alt="recept">
+            <h2>Recept</h2>
+            <p>Dit gerecht is vrij eenvoudig te maken. Ideaal op een doordeweekse dag als je even niet weet wat je met het leven aan moet. Als je wel weet wat je met het leven aan moet, is dit gerecht ook heel lekker. Drinksuggestie: een krat bier. Ingrediënten: Hoofdingrediënten: 1 Max Molovich […]</p>
+            <p>
+                <a href="recept.html"> Lees verder > </a>
+            </p>
 
-
-            <button><a href="recept.html"> Lees meer</a></button>
             <button type="button" onClick="onClick()">Voeg toe aan leeslijst</button>
         </section>
         <section>
-            <header>
-                <h3>Hongerwinter</h3>
-            </header>
-
-            <img src="img/verhalen/hongerwinter/Desktop%20HD@3x.png">
-
-            <p>Mijn voeten en handen heb ik ingezwachteld tegen de kou. Kranten tegen m’n borst. Ik duw een handkar voort waarin mijn zoon vredig ligt te slapen. Centraal Station. De tramrails liggen er kaal bij. Het hout tussen de rails is al lang weggenomen. Ik word geacht het IJ over te steken om in de dorpen [...]</p>
-
-        <input type="checkbox" class="download" />
- <input type="checkbox" class="tijd" />
-             <button><a href="hongerwinter.html"> Lees meer</a></button>
- <button type="button" onClick="onClick()">Voeg toe aan leeslijst</button>
-
-        </section>
-        <section>
-            <header>
-                <h3> Gefrustreerd </h3>
-            </header>
-            <img src="img/verhalen/gefrustreerd/Desktop%20HD@3x.png">
-            <p>Ik stap uit die godverdomde stinkbus. De mensen krioelen als mieren over het stationsplein. Ik wil ze vertrappen onder m’n schoenen. Vermorzelen. Verbrijzelen. De klootzakken en kakkerlakken. Met hun nietszeggende leventjes en hun waardeloze gedachten. Ik duw een wagentje met mijn […]</p>
 
             <input type="checkbox" class="download" />
- <input type="checkbox" class="tijd" />
-             <button><a href="gefrustreerd.html"> Lees meer</a></button>
-         <button type="button" onClick="onClick()">Voeg toe aan leeslijst</button>
+            <input type="checkbox" class="tijd" />
+
+
+            <img src="img/verhalen/hongerwinter/Desktop%20HD@3x.png" alt="hongerwinter">
+            <h2>Hongerwinter</h2>
+            <p>Mijn voeten en handen heb ik ingezwachteld tegen de kou. Kranten tegen m’n borst. Ik duw een handkar voort waarin mijn zoon vredig ligt te slapen. Centraal Station. De tramrails liggen er kaal bij. Het hout tussen de rails is al lang weggenomen. Ik word geacht het IJ over te steken om in de dorpen [...]</p>
+            <p>
+                <a href="hongerwinter.html"> Lees verder > </a>
+            </p>
+            <button type="button" onClick="onClick()">Voeg toe aan leeslijst</button>
         </section>
+
+        <section>
+            <input type="checkbox" class="download" />
+            <input type="checkbox" class="tijd" />
+            <img src="img/verhalen/gefrustreerd/Desktop%20HD@3x.png" alt="gefrustreerd">
+            <h2> Gefrustreerd </h2>
+            <p>Ik stap uit die godverdomde stinkbus. De mensen krioelen als mieren over het stationsplein. Ik wil ze vertrappen onder m’n schoenen. Vermorzelen. Verbrijzelen. De klootzakken en kakkerlakken. Met hun nietszeggende leventjes en hun waardeloze gedachten. Ik duw een wagentje met mijn […]</p>
+            <p>
+                <a href="gefrustreerd.html"> Lees verder > </a>
+            </p>
+            <button type="button" onClick="onClick()">Voeg toe aan leeslijst</button>
+        </section>
+
     </section>
- <footer>
+    <footer>
         <p>&copy; 2017 - 2018<a href="http://www.amyisabella.nl" target="_blank"> Amy Sprengers</a> | DFDS
             <p>
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

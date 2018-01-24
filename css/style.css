@@ -1,4 +1,4 @@
-/*algemene instellingen*/
+/*general settings*/
 
 * {
     box-sizing: border-box;
@@ -94,6 +94,10 @@ h4 {
     margin-bottom: 0.234em;
 }
 
+h6 {
+    visibility: hidden;
+}
+
 p {
     font-size: 1em
 }
@@ -109,7 +113,7 @@ a:hover {
     color: grey;
 }
 
-/*navigatie*/
+/*navigation*/
 
 nav {
     position: fixed;
@@ -227,29 +231,16 @@ footer a {
     color: white;
 }
 
-/*
-div a {
-    background-color: black;
-    color: #fff;
-    padding: 0 0.7em;
-    position: fixed;
-    font-size: 2em;
-    bottom: 0;
-    right: 0;
-    opacity: 0.4;
-    visibility: hidden
-}
-*/
-
-/*formulier aanmelden/registreren */
+/*registration form */
 
 article {
     margin-top: 1.250em;
     height: 35.000em;
-    width: 100%;
+    /*    width: 100%;*/
     /*        height: 100%;*/
     position: relative;
     top: 0.625em;
+    margin-left: -50px;
 }
 
 article figure a {
@@ -259,34 +250,55 @@ article figure a {
     display: inline-block;
     text-indent: 3.125em;
     line-height: 2.500em;
-    border-right: 0.063em solid grey;
+    /*    border: 0.01em solid black;*/
 }
 
 #tab1 a {
-    width: 10.625em;
-    left: 0.625em;
+    width: 12em;
+    left: 3.5em;
+    border: solid #ff9b36 0.063em;
 }
 
 #tab2 a {
-    width: 10.000em;
-    left: 11.250em;
+    width: 12em;
+    left: 16em;
+    border: solid #ff9b36 0.063em;
+}
+
+#tab1 form input[type=submit] {
+    width: 28.1em;
+    border-style: none;
+
+}
+
+#tab2 form input[type=submit] {
+    width: 30em;
+    border-style: none;
+}
+
+article figure {
+    width: 25em;
+    background: white;
+
+    box-shadow: 0 0.25em 0 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+    border-style: none;
+    margin-top: 2.500em;
 }
 
 article figure form {
     display: none;
     clear: both;
-    /*    position: absolute;*/
-    top: 0;
-    padding: 0.313em;
-    width: 100%;
-    min-height: 10.000em;
-    margin-top: 2.500em;
-    /*    box-sizing: border-box;*/
+    width: 2em;
 }
 
 article figure:target a {
+    /*    background: #ff9b36;*/
+    /*    color: #fff;*/
     background: #ff9b36;
     color: #fff;
+    padding: 0em;
+    border: solid #ff9b36 0.063em;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
 }
 
 article figure:target form {
@@ -308,29 +320,44 @@ article figure:nth-child(2) a {
 }
 
 input[type=text] {
-    width: 100%;
+    width: 29em;
     padding: 0.750em;
     border-radius: 0.750em;
+    line-height: normal;
+    font-size: 0.8em;
+}
+
+article fieldset {
+    width: 430px;
+    height: 430px;
+    border-style: none;
+
+}
+
+article form fieldset label {
+    display: inline-block;
+    margin-top: 20px;
+    height: 35px;
 }
 
 /*https://codepen.io/Ninjaweb/pen/pvrowL?q=tabs+without+javascript&limit=all&type=type-pens*/
 
-/*uitgelicht*/
+/*highlighted*/
 
 section > section {
     background: white;
     flex: 0 0 100%;
     box-shadow: 0 0.250em 0.500em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.250em 0 rgba(0, 0, 0, 0.19);
     position: static;
-    /*    height: 12em;*/
-    /*    margin-top: 0;*/
-    /*        margin-bottom: 0.625em;*/
+    /*        height: 12em;*/
+    /*        margin-top: 0;*/
+    margin-bottom: 0.625em;
 }
-
 
 section > section > h2 {
     margin-left: 1em;
     padding-top: 0.625em;
+
 }
 
 section > section > p {
@@ -349,8 +376,11 @@ section > section > p > a {
     margin-bottom: 2em;
 }
 
+section > div > section > h2 {
+    margin-top: 1em;
+}
 
-/*afbeeldingen en overlay*/
+/*images and overlay*/
 
 img {
     width: 100%;
@@ -384,7 +414,7 @@ section img {
     margin-bottom: -10PX;
 }
 
-/*knoppen*/
+/*buttons*/
 
 button {
     width: 50%;
@@ -396,9 +426,39 @@ button {
     letter-spacing: 0.016em;
     color: #fff;
     background: #ff9b36;
-    align-content: center;
+    text-align: center;
     border: none;
-    margin-top: 1.875em;
+
+}
+
+.button {
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.16667em;
+    padding: .66667rem 0;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.016em;
+    color: #fff;
+    background: #ff9b36;
+    text-align: center;
+    border: none;
+    /*    margin-top: 1.875em;*/
+}
+
+.buttonpopup {
+    width: 50%;
+    font-size: 1em;
+    line-height: 1.16667em;
+    padding: .66667rem 0;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.016em;
+    color: #fff;
+    background: #ff9b36;
+    text-align: center;
+    border: none;
+    /*    margin-top: 1.875em;*/
 }
 
 button > img {
@@ -428,7 +488,7 @@ input::selection {
     color: white;
 }
 
-/*verhalen*/
+/*stories*/
 
 #recept {
     background-image: url(../img/verhalen/recept/Mobile@3x.png);
@@ -436,7 +496,6 @@ input::selection {
     background-size: contain;
     height: 67.000em;
     background-repeat: no-repeat;
-
     padding: 0
 }
 
@@ -462,7 +521,7 @@ input::selection {
 
 }
 
-/*leeslijst tabs*/
+/*readinglist and tabs*/
 
 section.tab {
     margin-top: 1.250em;
@@ -498,7 +557,7 @@ section.tab input:nth-of-type(2):checked ~ .tab:nth-of-type(2) {
 
 }
 
-/*zoeken*/
+/*search*/
 
 body.filter nav li .zoeken {
     opacity: 1;
@@ -527,7 +586,7 @@ header .zoek {
 
 }
 
-header .zoek > button {
+header .zoek > .button {
     width: 30%;
     margin: 0;
 }
@@ -542,7 +601,7 @@ input[type=search] {
 
 /*    https://codepen.io/SkipHendriks/pen/wKJQzg?depth=everything&order=popularity&page=16&q=search+menu&show_forks=false*/
 
-/*voorpagina*/
+/*home*/
 
 .voorpagina > fieldset {
     /*        width: 50%;*/
@@ -564,7 +623,7 @@ section > h1 {
     display: inline-block;
 }
 
-section > button {
+section > .button {
     display: inline-block;
     /*   margin-right: 0;*/
     width: 37%;
@@ -611,126 +670,58 @@ li.show {
 
 /*https://www.w3schools.com/css/tryit.asp?filename=trycss_breadcrumbs*/
 
-/*reactie*/
+/*comment*/
 
 .post {
     display: block;
     border: 0.063em solid;
-    height: 25.000em;
+    height: 20.000em;
+    width: 80%;
+    margin-left: 5%;
     margin-top: -0em;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
     /*   margin-left:  6.250em;*/
     /*    margin-right: 6.250em;*/
 }
 
-/*pop-up en lijst*/
+.commentbox {
 
-.container {
-    /*  max-width: 28.125em;*/
-    /*  margin: 0 auto;*/
-    /*  border-top: 0.313em solid #435757;*/
-    /*  background-color: rgba(255, 255, 255, .2);*/
-    /*  box-shadow: 0 0 1.250em rgba(0, 0, 0, .1);*/
-    user-select: none;
-}
-
-.items {
-    display: flex;
-    flex-direction: column;
-    /*  padding: 1.250em;*/
-    counter-reset: done-items undone-items;
-}
-
-.done {
-    order: 1;
-}
-
-.done::after {
-    content: ' (' counter(done-items) ')';
-}
-
-.undone {
-    order: 3;
-}
-
-
-/* hide inputs offscreen, but at the same vertical positions as the correpsonding labels, so that tabbing scrolls the viewport as expected */
-
-input {
-    /*  display: block;*/
-    height: 3.313em;
-    /*  order: 4;*/
-    outline: none;
-    counter-increment: undone-items;
-}
-
-input:checked {
-    order: 2;
-    counter-increment: done-items;
-}
-
-.popuplabel {
     display: block;
-    position: relative;
-    padding: 0.938em 0 0.938em 2.813em;
-    border-top: 0.063em dashed #fff;
-    order: 4;
-    cursor: pointer;
-    animation: undone .5s;
+    border: 0.063em solid;
+    /*    height: 20.000em;*/
+    width: 80%;
+    margin-left: 5%;
+    margin-top: -0em;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    /*   margin-left:  6.250em;*/
+    /*    margin-right: 6.250em;*/
 }
 
-.popuplabel::before {
-    content: '\f10c';
-    circle outline display: block;
-    position: absolute;
-    top: 0.688em;
-    left: 0.625em;
-    font: 1.5em 'FontAwesome';
+.comment {
+    border-style: none;
 }
 
-input:checked + .popuplabel {
-    order: 2;
-    animation: done .5s;
+.comment > input[type=text] {
+
+    width: 75%;
 }
 
-.popuplabel:checked + .popuplabel::before {
-    /*  content: '\f058';  circle checkmark */
+.commentbox > button[type=button] {
+    margin-left: 80px;
+    width: 70%;
 }
 
-@keyframes done {
-    0% {
-        opacity: 0;
-        background-color: rgba(255, 255, 255, .4);
-        transform: translateY(1.250em);
-    }
-    50% {
-        opacity: 1;
-        background-color: rgba(255, 255, 255, .4);
-    }
-}
-
-@keyframes undone {
-    0% {
-        opacity: 0;
-        background-color: rgba(255, 255, 255, .4);
-        transform: translateY(1.250em);
-    }
-    50% {
-        opacity: 1;
-        background-color: rgba(255, 255, 255, .4);
-    }
-}
-
-/*https://codepen.io/lonekorean/pen/xGLLwX?depth=everything&order=popularity&page=4&q=+list&show_forks=false*/
+/*pop-up and list*/
 
 .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
-
     right: 0;
+
     background: rgba(0, 0, 0, 0.7);
     transition: opacity 500ms;
-    visibility: hidden;
+    /*    visibility: hidden;*/
     opacity: 0;
 
 }
@@ -738,50 +729,124 @@ input:checked + .popuplabel {
 .overlay:target {
     visibility: visible;
     opacity: 1;
-    height: fit-content;
+    height:64em;
     z-index: 3;
 }
 
-.popup {
-    /*    margin: 4.375em auto;*/
-    /*    padding: 1.250em;*/
-    background: #fff;
-    border-radius: 0.313em;
-    /*  width: 30%;*/
-    /*    width: 100%;*/
-    /*    height: 25.000em;*/
-    position: relative;
-    /*  transition: all 5s ease-in-out;*/
-    margin-top: 4.5em;
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 4.5em;
+#popup2 {
+    display: flex;
+    /*    padding: 0;*/
+    margin: 0;
+    list-style: none;
+
+    /*    -ms-box-orient: horizontal;*/
+    /*    display: -webkit-box;*/
+    /*    display: -moz-box;*/
+    /*    display: -ms-flexbox;*/
+    /*    display: -moz-flex;*/
+    /*    display: -webkit-flex;*/
+    display: flex;
+    / -webkit-justify-content: space-around;
+    justify-content: space-around;
+    /*    -webkit-flex-flow: row wrap;*/
+    flex-flow: row wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
 }
 
-.popup h2 {
-    margin-top: 0;
-    color: #333;
-    /*  font-family: Tahoma, Arial, sans-serif;*/
+#popup2 > fieldset:first-of-type {
+    width: 10em;
+    height: 10em;
+    flex: 1 100%;
+    min-width: 0;
+    padding: 15px 0;
+    margin: 75px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #666;
+    width: 300px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    position: relative;
+    /*    margin-top: -5em;*/
+    margin-bottom: 0px;
+      text-align: center;
+}
+
+#popup2 > fieldset {
+    /*    width:50em;*/
+    flex: 1;
+
+    padding: 10px;
+    /*  min-width: 0;*/
+    background: lightgreen;
+    padding: 15px 0;
+    /*    margin: 75px auto;*/
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #666;
+    width: 300px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    position: relative;
+    /*    top: 150px;*/
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay.light {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.overlay .cancel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
 }
 
 .popup .close {
     position: absolute;
-    top: 1.250em;
-    right: 1.875em;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    opacity: 0.8;
     transition: all 200ms;
-    font-size: 1.875em;
+    font-size: 24px;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: #666;
 }
 
 .popup .close:hover {
-    /*  color: #06D85F;*/
+    opacity: 1;
 }
 
 .popup .content {
-    height: 57em;
+    max-height: 400px;
     overflow: auto;
+}
+
+.popup p {
+    margin: 0 0 1em;
+}
+
+.popup p:last-child {
+    margin: 0;
 }
 
 /*https://codepen.io/imprakash/pen/GgNMXO*/
@@ -818,23 +883,71 @@ aside > label > select {
     border: 0.125em solid #ff9b36;
 }
 
+.tijd {
+
+    top: 20;
+
+    width: 60px;
+
+}
+
+.download {
+    top: 30;
+    left: 40;
+}
+
+aside {
+
+    position: relative;
+}
+
+#div1 {
+    top: -70px;
+    left: 31px;
+    /*    width:88px;*/
+    /*    height:51px;*/
+    float: left;
+    width: 65%;
+    margin: 0;
+}
+
+#div2 {
+    top: -70px;
+    float: right;
+    width: 29%;
+    margin: 0;
+    right: 31px;
+}
+
+.results {
+    height: 50em;
+    margin-left: 1em;
+}
+
+input[type=text] {
+    width: 23em;
+    padding: 0.750em;
+    border-radius: 0.750em;
+    line-height: normal;
+    font-size: 0.8em;
+}
 
 /* Tablet (medium) screens */
 
 @media screen and (min-width: 30em) {
     .voorpagina {
         background: url(../img/lezenheader.png);
-        /*        Copyright : warrengoldswain*/
         background-position: center;
         background-size: cover;
 
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 2%;
+
         /*        height: 100em;*/
     }
     .voorpagina > fieldset {
-        width: 50%;
+        width: 2em;
         border: 0;
         border-radius: 0.313em;
         background-color: white;
@@ -857,7 +970,7 @@ aside > label > select {
     section > section:nth-child(3) {
         display: block;
     }
-    button {
+    .button {
         width: 50%;
         margin-left: 50%;
         font-size: .88889em;
@@ -881,7 +994,7 @@ aside > label > select {
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row: 1;
-        width: 50%;
+        width: 100%;
     }
     section > section > main {
         background: white;
@@ -922,7 +1035,96 @@ aside > label > select {
     aside > label > select {
         border: 0.125em solid #ff9b36;
     }
+    article {
+        margin-top: 1.250em;
+        height: 36.000em;
+        width: 50%;
+        /*        height: 100%;*/
+        position: relative;
+        top: 0.625em;
+        left: 10%;
+    }
+    article figure a {
+        /*height: 100%;*/
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        text-indent: 3.125em;
+        line-height: 2.500em;
+        /*    border: 0.01em solid black;*/
+    }
+    #tab1 a {
+        width: 16em;
+        left: 3.5em;
+        border: solid #ff9b36 0.063em;
+    }
+    #tab2 a {
+        width: 16em;
+        left: 19.3em;
+        border: solid #ff9b36 0.063em;
+    }
+    #tab1 form input[type=submit] {
+        width: 36em;
+        border-style: none;
 
+    }
+    #tab2 form input[type=submit] {
+        width: 36em;
+        border-style: none;
+    }
+    article figure {
+        width: 32em;
+        background: white;
+
+        box-shadow: 0 0.25em 0 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+        border-style: none;
+        margin-top: 2.500em;
+    }
+    article figure form {
+        display: none;
+        clear: both;
+    }
+    input[type=text] {
+        width: 30em;
+        padding: 0.750em;
+        border-radius: 0.750em;
+        line-height: normal;
+        font-size: 0.8em;
+    }
+    .post {
+        display: block;
+        border: 0.063em solid;
+        height: 20.000em;
+        width: 75%;
+        margin-left: 15%;
+        margin-top: -0em;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+        /*   margin-left:  6.250em;*/
+        /*    margin-right: 6.250em;*/
+    }
+    .commentbox {
+
+        display: block;
+        border: 0.063em solid;
+        /*    height: 20.000em;*/
+        width: 75%;
+        margin-left: 15%;
+        margin-top: -0em;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+        /*   margin-left:  6.250em;*/
+        /*    margin-right: 6.250em;*/
+    }
+    .comment {
+        border-style: none;
+    }
+    .comment > input[type=text] {
+
+        width: 75%;
+    }
+    .commentbox > button[type=button] {
+        margin-left: 80px;
+        width: 70%;
+    }
 
 }
 
@@ -963,7 +1165,7 @@ aside > label > select {
         grid-row-start: 1;
         grid-row-end: 1;
     }
-    section > button {
+    section > .button {
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row: 1;
@@ -988,7 +1190,7 @@ aside > label > select {
         margin-top: 0;
         margin-bottom: 0.625em;
     }
-    button {
+    .button {
         width: 50%;
         margin-left: 50%;
         font-size: .88889em;
@@ -1025,8 +1227,103 @@ aside > label > select {
         background-size: contain;
         height: 81.250em;
     }
+    article {
+        margin-top: 1.250em;
+        height: 36.000em;
+        width: 50%;
+        /*        height: 100%;*/
+        position: relative;
+        top: 0.625em;
+        left: 13%;
+    }
+    article figure a {
+        /*height: 100%;*/
+        position: absolute;
+        top: 0;
+        display: inline-block;
+        text-indent: 3.125em;
+        line-height: 2.500em;
+        /*    border: 0.01em solid black;*/
+    }
+    #tab1 a {
+        width: 16em;
+        left: 3.5em;
+        border: solid #ff9b36 0.063em;
+    }
+    #tab2 a {
+        width: 16em;
+        left: 19.3em;
+        border: solid #ff9b36 0.063em;
+    }
+    #tab1 form input[type=submit] {
+        width: 36em;
+        border-style: none;
 
+    }
+    #tab2 form input[type=submit] {
+        width: 36em;
+        border-style: none;
+    }
+    article figure {
+        width: 32em;
+        background: white;
 
+        box-shadow: 0 0.25em 0 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+        border-style: none;
+        margin-top: 2.500em;
+    }
+    article figure form {
+        display: none;
+        clear: both;
 
+    }
+    input[type=text] {
+        width: 37em;
+        padding: 0.750em;
+        border-radius: 0.750em;
+        line-height: normal;
+        font-size: 0.8em;
+    }
+    form.voorpagina {
+        margin-bottom: 40px;
+    }
+    .results {
+        height: 50em;
+        margin-left: 10em;
+    }
+    .post {
+        display: block;
+        border: 0.063em solid;
+        height: 20.000em;
+        width: 50%;
+        margin-left: 25%;
+        margin-top: -0em;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+        /*   margin-left:  6.250em;*/
+        /*    margin-right: 6.250em;*/
+    }
+    .commentbox {
+
+        display: block;
+        border: 0.063em solid;
+        /*    height: 20.000em;*/
+        width: 50%;
+        margin-left: 25%;
+        margin-top: -0em;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+        /*   margin-left:  6.250em;*/
+        /*    margin-right: 6.250em;*/
+    }
+    .comment {
+        border-style: none;
+    }
+    .comment > input[type=text] {
+
+        width: 75%;
+    }
+    .commentbox > button[type=button] {
+        margin-left: 80px;
+        width: 70%;
+    }
 
 }

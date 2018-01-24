@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Aanmelden</title>
 </head>
+
 <body>
     <!--        <a name="top"></a>-->
-<header>
+    <header>
         <nav>
             <ul>
-                <li><a href="index.html"><img src="img/logo.png" alt="logo"></a></li>
+                <li>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </li>
                 <li>
                     <a href="leeslijsten.html">
                         <p>Leeslijsten</p>
@@ -32,53 +38,58 @@
                         <p>Aanmelden</p>
                     </a>
                 </li>
-                <li><img class="zoeken" src="img/iconen/zoeken.png" alt=zoeken></li>
- <li class="zoek"><input type="search" results="5"  placeholder="Zoeken..."> <button>Zoek</button>
+                <li>
+                    <img class="zoeken" src="img/iconen/zoeken.png" alt=zoeken>
+                </li>
+                <li class="zoek">
+                    <input type="search" placeholder="Zoeken...">
+                    <button>Zoek</button>
+                </li>
             </ul>
         </nav>
     </header>
-<article>
-<figure class="a" id="tab1">
-    <a href="#tab1">Aanmelden</a>
+    <article>
+        <h6>Aanmeldformulier</h6>
+        <figure class="a" id="tab1">
+            <a href="#tab1">Aanmelden</a>
 
-                <form action="index.html">
+            <form action="index.html">
                 <fieldset>
-<!--                    <legend>Aanmelden</legend>-->
-                    <label for="mail"> <p>E-mail:</p> </label>
-                    <input id="mail" type="text" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" placeholder="info@email.com" required>
-                    <label for="password"><p>Wachtwoord:</p></label>
+                    <!--                    <legend>Aanmelden</legend>-->
+                    <label for="mail"> E-mail: </label>
+                    <input type="text" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" placeholder="info@email.com" required>
+                    <label for="password">Wachtwoord:</label>
                     <input type="text" name="password" id="password" placeholder="******">
 
                 </fieldset>
-                    <input name="aanmelden" type="submit" value="aanmelden"></form>
+                <input name="aanmelden" type="submit" value="aanmelden"></form>
 
-    </figure>
-<figure class="b" id="tab2">
-  <a href="#tab2">Registeren</a>
+        </figure>
+        <figure class="b" id="tab2">
+            <a href="#tab2">Registeren</a>
 
-  <form action="index.html">
-            <fieldset>
-                <label for="name"> <p>Voornaam:</p></label><input id="name" type="text" placeholder= "Nick" required>
+            <form action="index.html">
+                <fieldset>
+                    <label for="name"> Voornaam:</label><input id="name" type="text" placeholder="Nick" required>
 
-                <label for="surname"><p>Achternaam:</p></label><input type="text" id="surname" placeholder="Jonas" required>
+                    <label for="surname">Achternaam:</label><input type="text" id="surname" placeholder="Jonas" required>
 
-                <label for="mail"><p>E-mail:</p></label>
-                <input id="mail" type="text" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" placeholder="info@email.com" required>
+                    <label for="mail">E-mail:</label>
+                    <input id="mail" type="text" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" placeholder="info@email.com" required>
 
-                 <label for="password"><p>Wachtwoord (Gebruik 1 hoofdletter, 1 lage letter en 1 nummer.)</p></label>
-        <input type="text"  id="password" placeholder="******" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                    <label for="password">Wachtwoord (Gebruik 1 hoofdletter, 1 lage letter en 1 nummer.)</label>
+                    <input type="text" placeholder="******" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
 
-             </fieldset>
-                    <input name="aanmelden" type="submit" value="registreren"></form>
+                </fieldset>
+                <input name="aanmelden" type="submit" value="registreren"></form>
 
-    </figure>
-</article>
-
- <footer>
+        </figure>
+    </article>
+    <footer>
         <p>&copy; 2017 - 2018<a href="http://www.amyisabella.nl" target="_blank"> Amy Sprengers</a> | DFDS
             <p>
     </footer>
-<script type="text/javascript" src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 <!--https://css-tricks.com/form-validation-part-1-constraint-validation-html-->

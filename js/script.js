@@ -18,6 +18,8 @@ function closeFilter(e) {
 
 //like knoppen
 var clicks = 0;
+
+
     function onClick() {
         clicks += 1;
         document.getElementById("clicks").innerHTML = clicks;
@@ -45,4 +47,9 @@ function postComment() {
 }
 
 
-
+//verplaatsen
+function MoveDiv() {
+    var fragment = document.createDocumentFragment();
+    fragment.appendChild(document.getElementById('source'));
+    document.getElementById('destination').appendChild(fragment);
+}
